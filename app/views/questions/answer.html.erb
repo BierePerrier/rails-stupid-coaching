@@ -1,0 +1,12 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<% if @user_input == "i am going to work" %>
+      <p>Great!</p>
+   <% elsif @user_input.include? ("?") %>
+      <p>Silly question, get dressed and go to work!</p>
+   <% else %>
+      <p>I don't care, get dressed and go to work!</p>
+   <% end %>
+
+<%= link_to "ask", ask_path %>
